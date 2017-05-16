@@ -1,0 +1,3 @@
+[submodule "paclabs_vm_tmpl"]
+	path = paclabs_vm_tmpl
+	url = https://github.com/EMC-Underground/paclabs_vm_tmpl.git
