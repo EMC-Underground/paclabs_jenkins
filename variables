@@ -1,9 +1,9 @@
 {
     "esxi_host" : "10.4.44.102",
-    "esxi_datastore" : "",
+    "esxi_datastore" : "datastore1",
     "esxi_username" : "root",
     "esxi_password" : "password",
-    "vm_name" : "ubuntu",
+    "vm_name" : "jenkins",
     "ssh_username" : "ubuntu",
     "ssh_password" : "password"
 }
