@@ -19,7 +19,7 @@ resource "vsphere_virtual_machine" "jenkins" {
   name   = "jenkins"
   datacenter = "Datacenter"
   domain = "jenkins.pac.lab"
-  dns_servers = ["10.4.44.10"]
+  dns_servers = ["10.253.140.73"]
   cluster = "cluster"
 
   folder = "${vsphere_folder.frontend.path}"

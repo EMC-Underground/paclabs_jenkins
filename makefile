@@ -1,7 +1,10 @@
 all: build
 
 validate:
-	packer validate -var-file=variables paclabs_vm_tmpl/ubuntu_16.04.json
+	terraform validate
 
 build: validate
-	packer build -var-file=variables paclabs_vm_tmpl/ubuntu_16.04.json
+	terraform apply
+
+destroy:
+	terraform destroy
