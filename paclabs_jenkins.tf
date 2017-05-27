@@ -49,7 +49,16 @@ resource "vsphere_virtual_machine" "jenkins" {
       password = "password"
     }
   }
-
+  provisioner "file" {
+    source = "jenkins-compose.yml"
+    destination = "/tmp/jenkins-compose.yml"
+    
+    connection {
+      type = "ssh"
+      user = "ubuntu"
+      password = "password"
+    }
+}
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/script.sh",
