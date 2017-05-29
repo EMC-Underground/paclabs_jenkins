@@ -7,4 +7,4 @@ build: validate
 	terraform apply
 
 destroy:
-	terraform destroy
+	echo "yes" | terraform destroy
