@@ -8,5 +8,5 @@ apt-key fingerprint 0EBFCD88
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 apt update -y
 apt install -y docker-ce docker-compose
-sudo mkdir /var/lib/paclabs_ && sudo cp /tmp/jenkins-compose.yml /var/lib/paclabs_ >> $LOGFILE 2>&1
-sudo docker-compose -f /var/lib/paclabs_/jenkins-compose.yml up -d >> $LOGFILE 2>&1
+mkdir /var/lib/paclabs_ && sudo cp /tmp/jenkins-compose.yml /var/lib/paclabs_ >> $LOGFILE 2>&1
+docker-compose -f /var/lib/paclabs_/jenkins-compose.yml up -d >> $LOGFILE 2>&1

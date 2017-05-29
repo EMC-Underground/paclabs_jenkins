@@ -5,3 +5,4 @@ packer_cache/
 *.box
 *.tfstate
 *.tfstate.backup
+*.tfstate.lock.info
