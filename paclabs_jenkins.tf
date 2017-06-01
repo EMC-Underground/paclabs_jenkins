@@ -23,7 +23,7 @@ resource "vsphere_virtual_machine" "jenkins" {
   cluster = "cluster"
 
   folder = "${vsphere_folder.frontend.path}"
-  vcpu   = 2
+  vcpu   = 4
   memory = 2048
 
   network_interface {
