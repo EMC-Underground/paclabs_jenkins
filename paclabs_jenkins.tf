@@ -46,7 +46,7 @@ resource "vsphere_virtual_machine" "jenkins" {
     connection {
       type = "ssh"
       user = "ubuntu"
-      password = "password"
+      password = "Password#1"
     }
   }
   provisioner "file" {
@@ -56,7 +56,7 @@ resource "vsphere_virtual_machine" "jenkins" {
     connection {
       type = "ssh"
       user = "ubuntu"
-      password = "password"
+      password = "Password#1"
     }
 }
   provisioner "remote-exec" {
@@ -68,7 +68,7 @@ resource "vsphere_virtual_machine" "jenkins" {
     connection {
       type = "ssh"
       user = "ubuntu"
-      password = "password"
+      password = "Password#1"
     }
   }
 }

@@ -5,4 +5,5 @@ packer_cache/
 *.box
 *.tfstate
 *.tfstate.backup
+.terraform/
 *.tfstate.lock.info
